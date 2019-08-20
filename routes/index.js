@@ -47,7 +47,7 @@ router.post('/', function(req, res, next) {
         return console.log('err query',err);
       }
       if((result.rows).length == 1){
-         res.redirect('http://localhost:3000/listproduct')
+         res.redirect('./listproduct')
       }
       else{
         console.log("sai")
@@ -108,7 +108,7 @@ router.get('/edit/:id', function(req, res, next) {
         return console.log('err query',err);
       }
       if(result.rowCount ==1 ){
-         res.redirect('http://localhost:3000/listproduct')
+         res.redirect('./listproduct')
       }
       else{
         console.log("fail")
@@ -137,7 +137,7 @@ router.get('/add', function(req, res, next) {
         return console.log('err query',err);
       }
       if(result.rowCount ==1 ){
-         res.redirect('http://localhost:3000/listproduct')
+         res.redirect('./listproduct')
       }
       else{
         console.log("fail")
@@ -157,7 +157,7 @@ router.get('/delete/:id', function(req, res, next) {
       if(err){
         return console.log('err query',err);
       }
-       res.redirect('http://localhost:3000/listproduct')
+       res.redirect('./listproduct')
     });
   });
  });
