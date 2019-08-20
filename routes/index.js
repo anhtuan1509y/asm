@@ -5,10 +5,10 @@ var urlencodedParser = bodyParser.urlencoded({extended:false})
 var pg = require('pg')
 
 var config = {
-  user: 'postgres',
-  database: 'Login',
-  password: '123',
-  host: 'localhost',
+  user: 'dheskgvehxorgv',
+  database: 'dabt65gpdugk2i',
+  password: '895dbc84efd9f3cccbf405cdad37d2dd906aaae8463c6149f9f19f47223d21a5',
+  host: 'ec2-50-17-231-192.compute-1.amazonaws.com',
   port: 5432,
   max: 10,
 
