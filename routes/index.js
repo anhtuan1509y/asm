@@ -157,9 +157,9 @@ router.get('/delete/:id', function(req, res, next) {
       if(err){
         return console.log('err query',err);
       }
-       res.redirect('./listproduct')
     });
   });
+  res.redirect('./listproduct')
  });
 
 module.exports = router;
