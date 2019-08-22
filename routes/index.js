@@ -159,7 +159,7 @@ router.get('/delete/:id', function(req, res, next) {
       }
     });
   });
-  res.redirect('./listproduct')
+  res.redirect('../listproduct')
  });
 
 module.exports = router;
